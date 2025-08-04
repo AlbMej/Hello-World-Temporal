@@ -18,11 +18,11 @@ This repository aims to follow best practices by dividing the project into the f
 While not necessary, a virtual environment is recommended. These instructions use *uv* but you can use *Conda*, *Poetry*, etc. 
 
 1. I used uv as the package manager. See [installation](https://docs.astral.sh/uv/getting-started/installation/). 
-2. Install Temporal CLI: https://learn.temporal.io/getting_started/python/dev_environment/#set-up-a-local-temporal-service-for-development-with-temporal-cli 
+2. Install Temporal CLI. See [local temporal service](https://learn.temporal.io/getting_started/python/dev_environment/#set-up-a-local-temporal-service-for-development-with-temporal-cli)
 
 Once you have uv and the Temporal CLI installed, run `uv sync` to install the required dependencies. 
 
-## Running Program
+## Running Project
 
 1. Use `temporal server start-dev` in the 1st terminal
 2. Use `uv run worker.py` in a 2nd terminal
