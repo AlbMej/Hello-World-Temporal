@@ -3,15 +3,8 @@ name = "helloworldtemporal"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-authors = [
-    { name = "Alberto Mejia", email = "albertomejia295@gmail.com" }
-]
 requires-python = ">=3.13"
-dependencies = []
-
-[project.scripts]
-helloworldtemporal = "helloworldtemporal:main"
-
-[build-system]
-requires = ["uv_build>=0.8.4,<0.9.0"]
-build-backend = "uv_build"
+dependencies = [
+    "pytest-asyncio>=1.1.0",
+    "temporalio>=1.15.0",
+]
