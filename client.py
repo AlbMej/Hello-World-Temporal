@@ -15,10 +15,14 @@ async def main():
     # Start client
     client = await Client.connect("localhost:7233", namespace="default")  # Connect to the Temporal server
 
+    # Take input from console
+    print("What's your name?")  # Prompt user for their name
+    name = input("Enter your name: ")  # Read user input
+
     # While a worker is running, use the client to run the workflow and wait for its result
     result = await client.execute_workflow(  # https://python.temporal.io/temporalio.client.Client.html#execute_workflow
         workflow="GreetingWorkflow",  # Name of the workflow to run
-        args=["World"],  # Arguments to pass to the workflow (arg="World" also valid)
+        args=[name],  # Arguments to pass to the workflow (arg=name also valid)
         id="greeting-workflow-id",  # Workflow ID must be unique (can be reused if completed)
         task_queue="greeting",  # Task queue to use for the workflow
     )

@@ -5,8 +5,9 @@ from concurrent.futures import ThreadPoolExecutor
 import logging
 from temporalio.client import Client
 from temporalio.worker import Worker
-from workflows.greeting_workflow import GreetingWorkflow
 from activities.greeting_activity import compose_greeting
+from workflows.greeting_workflow import GreetingWorkflow
+
 
 
 async def main():

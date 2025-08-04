@@ -21,6 +21,14 @@ This repository aims to follow best practices by dividing the project into the f
 2. `python worker.py`
 3. `python client.py`
 
+## Tests
+
+Run the following command from the project root to start the tests:
+`pytest`
+
+This command will search for files in your tests folder that match the pattern `test_*.py` or `*_test.py`
+
+
 ## Resources:
 1. https://temporal.io/blog/python-sdk-diving-into-workers-and-workflows 
 2. https://learn.temporal.io/getting_started/python/hello_world_in_python/?os=win
